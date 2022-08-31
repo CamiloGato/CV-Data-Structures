@@ -1,0 +1,3 @@
+C:/Users/cmand/Documents/Universi/Estructura-Datos/cmake-build-debug/CMakeFiles/Estructura_Datos.dir
+C:/Users/cmand/Documents/Universi/Estructura-Datos/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/cmand/Documents/Universi/Estructura-Datos/cmake-build-debug/CMakeFiles/rebuild_cache.dir
