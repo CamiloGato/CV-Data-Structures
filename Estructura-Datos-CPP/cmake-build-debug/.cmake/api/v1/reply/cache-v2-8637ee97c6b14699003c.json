@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "c:/Users/cmand/Documents/Universi/Estructura-Datos/cmake-build-debug"
+			"value" : "c:/Users/cmand/Documents/CV-Data-Structures/Estructura-Datos-CPP/cmake-build-debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -79,7 +79,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "22"
+			"value" : "23"
 		},
 		{
 			"name" : "CMAKE_CACHE_PATCH_VERSION",
@@ -91,7 +91,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "3"
+			"value" : "2"
 		},
 		{
 			"name" : "CMAKE_COMMAND",
@@ -142,7 +142,7 @@
 					"value" : "CXX compiler"
 				}
 			],
-			"type" : "FILEPATH",
+			"type" : "STRING",
 			"value" : "C:/Program Files/JetBrains/CLion 2022.1/bin/mingw/bin/g++.exe"
 		},
 		{
@@ -286,7 +286,7 @@
 					"value" : "C compiler"
 				}
 			],
-			"type" : "FILEPATH",
+			"type" : "STRING",
 			"value" : "C:/Program Files/JetBrains/CLion 2022.1/bin/mingw/bin/gcc.exe"
 		},
 		{
@@ -623,7 +623,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "C:/Users/cmand/Documents/Universi/Estructura-Datos"
+			"value" : "C:/Users/cmand/Documents/CV-Data-Structures/Estructura-Datos-CPP"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -1003,7 +1003,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "C:/Program Files/JetBrains/CLion 2022.1/bin/cmake/win/share/cmake-3.22"
+			"value" : "C:/Program Files/JetBrains/CLion 2022.1/bin/cmake/win/share/cmake-3.23"
 		},
 		{
 			"name" : "CMAKE_SHARED_LINKER_FLAGS",
@@ -1239,7 +1239,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/cmand/Documents/Universi/Estructura-Datos/cmake-build-debug"
+			"value" : "C:/Users/cmand/Documents/CV-Data-Structures/Estructura-Datos-CPP/cmake-build-debug"
 		},
 		{
 			"name" : "Estructura_Datos_IS_TOP_LEVEL",
@@ -1263,7 +1263,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/cmand/Documents/Universi/Estructura-Datos"
+			"value" : "C:/Users/cmand/Documents/CV-Data-Structures/Estructura-Datos-CPP"
 		}
 	],
 	"kind" : "cache",

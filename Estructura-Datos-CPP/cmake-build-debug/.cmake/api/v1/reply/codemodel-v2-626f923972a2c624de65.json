@@ -49,12 +49,12 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "C:/Users/cmand/Documents/Universi/Estructura-Datos/cmake-build-debug",
-		"source" : "C:/Users/cmand/Documents/Universi/Estructura-Datos"
+		"build" : "C:/Users/cmand/Documents/CV-Data-Structures/Estructura-Datos-CPP/cmake-build-debug",
+		"source" : "C:/Users/cmand/Documents/CV-Data-Structures/Estructura-Datos-CPP"
 	},
 	"version" : 
 	{
 		"major" : 2,
-		"minor" : 3
+		"minor" : 4
 	}
 }

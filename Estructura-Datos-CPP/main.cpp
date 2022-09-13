@@ -29,28 +29,28 @@ int main(){
     getline(cin, n);
 
     for (int i = 0; i < stoi(n); ++i) {
-
-        string longitud;
-        getline(cin, longitud);
-
         string lista;
         getline(cin, lista);
-        vector<int> vector = get_vector(lista, " ");
 
-        int contador = 0;
-        int aux = 0;
-        do{
-            int valor = vector[aux];
-            if ( vector[aux] + vector[aux+valor] == 0 ){
-                contador++;
+        vector<int> numeros = get_vector(lista, " ");
+        sort(numeros.begin(), numeros.end());
+
+        int actual = numeros[0];
+        int suma = 0;
+        for (int j = 0; j < numeros.size() - 1; ++j) {
+            if (j == numeros.size() - 1 ) {
+                cout << suma << endl;
                 break;
             }
-            aux += valor;
-            contador++;
+            if ( actual != numeros[j] ) {
+                cout << suma << " ";
+                suma = 0;
+            }
+            actual = numeros[j];
+            suma++;
+        }
 
-        } while ( 0 < aux && aux < stoi(longitud) );
-
-        cout << contador << endl;
+        cout << endl;
 
     }
 

@@ -6,29 +6,33 @@ def binary_search(arr, x):
     while low <= high:
 
         mid = (high + low) // 2
+
+        # If x is greater, ignore left half
         if arr[mid] < x:
             low = mid + 1
 
+        # If x is smaller, ignore right half
         elif arr[mid] > x:
             high = mid - 1
 
+        # means x is present at mid
         else:
-            return mid + 1
+            return (mid + 1)
 
+    # If we reach here, then the element was not present
     return 0
 
 
 lon_lista = int(input())
-lista = list(map(int, input().split(" ")))
+lista = list(map(int, input().strip().split(" ")))
 
 lon_elementos = int(input())
-elementos = list(map(int, input().split(" ")))
-
+elementos = list(map(int, input().strip().split(" ")))
 
 suma = 0
 
-for i in range(lon_elementos):
+for elemento in elementos:
 
-    suma += binary_search(lista, elementos[i])
+    suma += binary_search(lista, elemento)
 
 print(suma)
