@@ -2,22 +2,22 @@
 
 # Arrays
 
-The arrays are a collection of data which is responsible for storing the same type of data. They have three main characteristics.
+The arrays are a collection of data that is responsible for storing the same type of data. They have three main characteristics.
 
-- The elements that stores are the same type.
-- Are stored in consecutive memory location.
+- The elements that are stores are the same type.
+- Are stored in a consecutive memory location.
 - Can be accessed by an index (Starting at zero, ending at length minus one)
 
-Thus, to manipulate an array, in addition to the elements themselves, three pieces of information must be stored: the memory address where the array begins, its length (number of elements) and the data type.
+Thus, to manipulate an array, in addition to the elements themselves, three pieces of information must be stored: the memory address where the array begins, its length (number of elements), and the data type.
 
 ![Untitled](Simple%20Data%20Types%208c1f86fc993a48279afb1eef28866357/Untitled.png)
 
 ## Indexing
 
-In this way, accessing an element whose index is known i (index) consist of:
+In this way, accessing an element whose index is known as i (index) consist of:
 
 ```csharp
-indexacion(X, i):
+indexation(X, i):
 	if i < 0 OR i >= X.size:
 		return ERROR
 	else:
@@ -30,7 +30,7 @@ In other words, regardless of the size of the array, if it has elements of the s
 
 ## Modification
 
-It consists of updating the element stored in a certain index. This operation implies, first accessing the memory location, which as we have already seen is O(1) and then making the change, which is also O(1).
+It consists of updating the element stored in a certain index. This operation implies, first accessing the memory location, which as we have already seen is O(1), and then making the change, which is also O(1).
 
 ## Linear Search
 
@@ -50,25 +50,25 @@ Whose complexity is $f(n) = 1 + N(2) + 1 \longrightarrow O(N)$.
 
 ## Insertion
 
-In some programming languages, such Java or C#, the fixed-length arrays whose length is established when the array is created, from there, remain fixed, are differentiated from variable-length ones. (Vectors).
+In some programming languages, such as Java or C#, the fixed-length arrays whose length is established when the array is created, from there, remain fixed, and are differentiated from variable-length ones. (Vectors).
 
 Suppose a new element is added to the end of the array.
 
 ![Untitled](Simple%20Data%20Types%208c1f86fc993a48279afb1eef28866357/Untitled%201.png)
 
-During this operation the additional memory is requested and one of two things can happen:
+During this operation, additional memory is requested and one of two things can happen:
 
 - That such memory (in the example 0x28 to 0x31) is free.
 - That space is occupied.
 
-**The first case is favorable** because the only thing to do is reserve that memory space and then save the element there, that is, the efficiency is O(1).
+**The first case is favorable** because the only thing to do is a reserve that memory space and then save the element there, that is, the efficiency is O(1).
 
-**The second case is problematic** because the new element cannot be requested in another memory space because the structure would stop being an array (elements in contiguous memory locations).
+**The second case is problematic** because the new element cannot be requested in another memory space. After all, the structure would stop being an array (elements in contiguous memory locations).
 
-**What can be done then?.**
-The only alternative is to move the entire array to a new memory address where everything you already had fits, plus the new.
+**What can be done then?**
+The only alternative is to move the entire array to a new memory address where everything you already had fits, plus the new. one
 
-In other words you have to:
+In other words, you have to:
 
 - Find enough memory space.
 - Reserve said memory space.
@@ -82,22 +82,22 @@ Suppose now that we want to insert a new element, not at the end of the array, b
 
 ![Untitled](Simple%20Data%20Types%208c1f86fc993a48279afb1eef28866357/Untitled%202.png)
 
-In this case, the worst case scenario is that there is no contiguous memory available, and the entire resulting array needs to be moved, which would be O(N).
+In this case, the worst-case scenario is that there is no contiguous memory available, and the entire resulting array needs to be moved, which would be O(N).
 
-In addition, even with contiguous available memory (at the beginning or at the end of the array), in the worst case N/2 elements will have to be moved either one position to the right or to the left, that is, this scenario is also O(N ).
+In addition, even with contiguous available memory (at the beginning or the end of the array), in the worst case N/2 elements will have to be moved either one position to the right or the left, that is, this scenario is also O(N ).
 
 ## Erased
 
-Two cases have to be analysed:
+Two cases have to be analyzed:
 
 - If the index i of the element is known.
 - If it is not known
 
-**In the first case** you have to move the elements to the right of i one position to the left, or the elements to the left of i one position to the right (whichever is more efficient).
+**In the first case,** you have to move the elements to the right of I one position to the left, or the elements to the left of I one position to the right (whichever is more efficient).
 
 In this case $f(N) = \dfrac{N}{2} + 1 \longrightarrow O(N)$
 
-**In the second case** it is necessary, before the previous operation, to search for the first occurrence of the element (find i). This, as we have already seen, can be done in O(N)
+**In the second case,** it is necessary, before the previous operation, to search for the first occurrence of the element (find i). This, as we have already seen, can be done in O(N)
 
 In this case $f(N) = N(2) + 1 + \dfrac{N}{2}+1 \longrightarrow O(N)$
 
@@ -107,7 +107,7 @@ In this case $f(N) = N(2) + 1 + \dfrac{N}{2}+1 \longrightarrow O(N)$
 
 ## Binary Search
 
-We saw previously that the efficiency of an array search is O(N), but can it be done better?.
+We saw previously that the efficiency of an array search is O(N), but can it be done better?
 
 The answer is yes, … and it depends.
 
@@ -124,7 +124,7 @@ BinarySearch( X, e ):
 		else if e < x_mid:
 			end = mid - 1
 		else :
-			beggin = mid + 1
+			begin = mid + 1
 	return -1
 ```
 
