@@ -9,7 +9,8 @@ namespace Recursion
         static void Main(string[] args)
         {
             // IterationvsRecursion.Run();
-            TypeRecursion.Run();
+            // TypeRecursion.Run();
+            Exercises.Run();
         }
     }
 }
